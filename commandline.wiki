@@ -1,0 +1,3 @@
+# Using `sshfs` to mount a remote folder
+- First, you need sshfs installed.
+`sshfs user@remote:/remotepath/folder /Volumes/localpath/folder`
