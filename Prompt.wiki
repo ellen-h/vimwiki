@@ -1,0 +1,23 @@
+= Shell Things =
+
+== bashrc ==
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+find_git_branch() {
+  # from https://github.com/jimeh/git-aware-prompt/blob/master/prompt.sh
+  local branch
+  if branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null); then
+    if [[ "$branch" == "HEAD" ]]; then
+      branch='detached*'
+    fi
+    git_branch="$branch"
+  else
+    git_branch=""
+  fi
+  echo $git_branch
+}
+
+export PS1="[\[$(tput sgr0)\]\[\033[38;5;6m\]\w\[$(tput sgr0)\]\[\033[38;5;10m\]]\[$(tput sgr0)\]\[\033[38;5;16m\]\[\033[48;5;22m\]\$(find_git_branch)\[$(tput sgr0)\]\[\033[38;5;10m\]\[$(tput sgr0)\] "
