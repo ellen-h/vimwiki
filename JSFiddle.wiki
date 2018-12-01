@@ -1,4 +1,0 @@
-= JSFiddle tips =
-
-    * Get the console: go to Resources on left sidebar, and add:
-        * https://getfirebug.com/firebug-lite-debug.js

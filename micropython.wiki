@@ -1,4 +1,4 @@
-Using the micropython board
+# Micropython Board Quickstart
 
 1. Plug in the board. It will auto-mount PYBFLASH.
 
@@ -6,6 +6,6 @@ Using the micropython board
    e.g.
    cp level_comet.py /Volumes/PYBFLASH/main.py
 
-3. Run "picocom"
+3. Run *picocom*
    e.g. (tty number can change, ctrl-d to reload)
    picocom /dev/tty.usbmodem1412

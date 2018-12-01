@@ -1,0 +1,5 @@
+= System =
+
+== Mount a remote folder ==
+- Install *sshfs*
+- sshfs user@remote:/remotepath/folder /Volumes/localpath/folder
