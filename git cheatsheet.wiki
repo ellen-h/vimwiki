@@ -1,0 +1,17 @@
+# Git Cheatsheet
+
+## Updating local branches
+- `git pull --rebase origin master` Pull and rebase
+- `git fetch origin master:master` Update local master without checking out
+- `git pull --rebase=interactive origin master` Squash and rebase
+- `git rebase -i remotes/master` Maybe the same as above. check this.
+- `git pull --rebase=interactive --autostash origin master` Stash unstaged work, rebase, unstash
+
+## Branch naming
+- `git branch -m new-name` Rename current local branch
+- `git branch -m old-name new-name` Rename local branch
+- `git push origin :old-name new-name` Delete the old-name remote branch and push the new-name local branch
+- `git push origin -u new-name` Reset the upstream branch for the new-name local branch
+
+## Setting the upstream
+- `git remote set-url origin git@github.com:username/repo.git` Set upstream to use ssh

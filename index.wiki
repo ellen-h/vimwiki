@@ -1,3 +1,10 @@
-= Know =
+= Knuggets of Knowledge =
+
+== Cheatsheets ==
+
+    * [[git cheatsheet]]
+    * [[Shortcuts Cheatsheet]]
+
+== Projects ==
+
     * [[micropython]]
-    * [[system]]
