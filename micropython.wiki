@@ -1,4 +1,5 @@
-# Micropython Board Quickstart
+Micropython Board Quickstart
+----
 
 1. Plug in the board. It will auto-mount PYBFLASH.
 
